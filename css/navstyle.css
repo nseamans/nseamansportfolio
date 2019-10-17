@@ -32,7 +32,7 @@ body{
     color: #5F6366;
     font-family: 'Noto Serif', serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;=
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -221,3 +221,56 @@ body{
       color: #5da2d5;
     }
   }
+
+.aboutinfoblock{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.blockpage{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.languageBlock{
+    background-color: #5da2d5;
+    color: #EFEFEF;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.iconborder{
+    padding-top: .25em;
+    padding-bottom: .50em;
+    background-color: #5F6366;
+}
+
+.schoolicon{
+    max-height: 10em;
+}
+
+.techicon{
+    background-color: #5F6366;
+    max-height: 62.5px;
+}
+
+.techTitle{
+    font-size: 150%;
+    padding-top: .5em;
+    font-family: 'Noto Serif', serif;
+}
+
+.carousel-size{
+    min-height: 27.5em;
+}
+
+.iconcolor{
+    color: #F78888;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: .25em;
+    padding-right: .25em;
+}
