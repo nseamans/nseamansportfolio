@@ -18,7 +18,7 @@ class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      todisplay: "Front",
+      todisplay: "Full",
       projectchoice: false,
       menudisplay: "Skillset",
       projectchosen: 0,
