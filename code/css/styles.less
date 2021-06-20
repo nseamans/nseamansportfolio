@@ -1,0 +1,536 @@
+/* Colors */
+/*
+  SITE COLORS: 
+    BC252A red
+    0E7AA8 blue
+    6AD4D2 light blue
+    302C27 dark grey
+    f5f5f5 white
+
+  AVALIBLE FONTS:
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Suranna', serif;
+    font-family: 'Yeseva One', cursive;
+    font-family: 'Crimson Pro', serif;
+    font-family: 'Josefin Sans', sans-serif;
+*/
+
+@light-bg-color:     #f5f5f5 !important; 
+@dark-bg-color:      #302C27 !important; 
+@bg-url: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjM3IiBoZWlnaHQ9IjM3IiB2aWV3Qm94PSIwIDAgNDAsNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgxMzUpICI+PHJlY3QgaWQ9InBhdHRlcm4tYmFja2dyb3VuZCIgd2lkdGg9IjQwMCUiIGhlaWdodD0iNDAwJSIgZmlsbD0icmdiYSg0OCwgNDQsIDM5LDEpIj48L3JlY3Q+IDxjaXJjbGUgZmlsbD0iIzFhMjAyYyIgY3g9Ii0xNCIgY3k9Ii0xNiIgcj0iMSIgZmlsdGVyPSJ1cmwoI2ZpbHRlcjFwYXR0ZXJuKSI+PC9jaXJjbGU+PHBhdGggZmlsbD0icmdiYSgyNDUsIDI0NSwgMjQ1LDEpIiBkPSJNIDIwIDIwIGEgMSAxIDAgMCAwIDAgMmEgMSAxIDAgMCAwIDAgLTIgeiBNIC0xMCAtMTAgaCA2MCB2IDYwIGggLTYwIHoiPjwvcGF0aD48L3BhdHRlcm4+IDxmaWx0ZXIgaWQ9ImZpbHRlcjFwYXR0ZXJuIj48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iNCI+PC9mZUdhdXNzaWFuQmx1cj48L2ZpbHRlcj4gPC9kZWZzPiA8cmVjdCBmaWxsPSJ1cmwoI3BhdHRlcm4pIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIj48L3JlY3Q+PC9zdmc+";
+
+// Main Text Colors
+@text-dark:  #302C27 !important; 
+@text-light:  #f5f5f5 !important; 
+@text-title: #BC252A !important;
+@text-table: #0E7AA8 !important;
+
+// text shadow for nav
+@text-hardshadow-dark:#302C27 !important;
+@text-hardshadow-nav: #BC252A !important;
+@text-hardshadow-nav2: #0E7AA8 !important;
+@text-hardshadow-shadow: -1.25px 1.25px 0px  @text-hardshadow-nav,
+                         -2.5px  2.5px  0px  @text-hardshadow-nav,
+                         -3.5px  3.75px 0px  @text-hardshadow-nav;
+@text-hardshadow-shadow-hover: -2.25px 2.25px 1px  @text-hardshadow-nav,
+                               -3.5px  3.5px  1px  @text-hardshadow-nav2,
+                               -4.5px  4.75px 1px  @text-hardshadow-nav,
+                               -6.5px  5.75px 1px  @text-hardshadow-nav2;
+@text-hardshadow-hero: -2.25px 2.25px 0px  @text-hardshadow-nav2;
+
+/* Type Set Style */
+@font-serif:        'Suranna', serif;
+@font-sans_serif:   'Barlow', sans-serif;
+@font_title:        'Yeseva One', cursive;
+@font_table_title:  'Josefin Sans', sans-serif;
+
+/* Button Style */
+@button-bg-color:   #2F2830; 
+@button-transition:   all 0.5s cubic-bezier(.25,.8,.25,1);
+@button-shadow:       0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+@button-shadow-hover: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+@button-text-color:   #fff;  
+@button-pad-left:     1.50em;
+@button-pad-right:    1.00em;
+@button-pad-top:      0.25em;
+@button-pad-bottom:   0.25em;
+
+// Body Styling
+body {
+  background-color: @light-bg-color;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+} 
+
+.headerintro__div{
+  display: flex;
+  justify-content: center;
+}
+
+.headerintro__text{
+  background-image: url('https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif');
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  font-family: @font_table_title;
+  font-weight: bold;
+  font-size: 275%;
+  text-align: left;
+  filter: grayscale(100%) brightness(50%);
+  background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+} 
+
+@media only screen and (max-width: 1100px) {
+  .headerintro__text{
+    font-size: 225%;
+  } 
+}
+
+@media only screen and (max-width: 900px) {
+  .headerintro__text{
+    font-size: 200%;
+  } 
+}
+
+@media only screen and (max-width: 766px) {
+  .headerintro__text{
+    font-size: 175%;
+  } 
+}
+
+.content_background{
+  content: "";
+  background:url(@bg-url);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  animation: bg-animation 3000ms linear both;
+  height: 100vh + 75vh; 
+}
+
+.content_container{
+  background-color: @light-bg-color;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 90%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content_background{
+    background: none;
+  }
+  .content_container{
+    box-shadow: none !important;
+  }
+}
+
+
+a:link {
+    font-family: @font-sans_serif;
+    opacity: 0.75;
+    text-decoration: inherit;
+    color: @text-dark;
+    cursor: auto;
+} a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+} a:hover{
+  opacity: 1.00;
+  color: @text-hardshadow-nav;
+  cursor: pointer;
+}
+
+.no_link{
+  font-family: @font-sans_serif;
+  opacity: 0.75;
+  text-decoration: inherit;
+  color: @text-dark;
+  cursor: auto;
+}
+
+// Navbutton Styling
+.navbar{
+  -webkit-animation: navbar-start 1000ms linear both;
+  animation: navbar-start 1000ms linear both;
+  background-color: @dark-bg-color;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 5em;
+}
+
+.navtitle{
+  opacity: 0.50;
+  font-size: 150%;
+  font-family: @font-sans_serif;
+  color: @text-light;
+  border: none;
+  background-color: @dark-bg-color;
+  transition:       @button-transition;
+  -webkit-animation: navtitle_start 3000ms linear both;
+  animation: navtitle_start 3000ms linear both;
+  text-shadow:  @text-hardshadow-shadow;
+}.navtitle:hover{
+  opacity: 0.75;
+  text-shadow: @text-hardshadow-shadow-hover;
+}
+
+.navbutton{
+  box-shadow:       @button-shadow;
+  color:            @button-text-color;
+  background-color: @dark-bg-color;
+  padding-left:     @button-pad-left; 
+  padding-right:    @button-pad-right;
+  padding-top:      @button-pad-top;
+  padding-bottom:   @button-pad-bottom;
+  border:           none;
+  transition:       @button-transition;
+}.navbutton:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: @button-shadow-hover;
+}
+
+.type_menu{
+  background-color: @dark-bg-color;
+}
+
+.menu-text {
+  color: @text-dark;
+  font-family: Arial;
+  font-size: 1.75em;
+  letter-spacing: 1px;
+}
+
+.submenu-text {
+  color: @text-dark;
+  font-family: Arial;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+
+.menu_button {
+  font-family: @font-sans_serif;
+  opacity: .5;
+  margin: 1;
+  line-height: 45px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}.menu_button:hover{
+  opacity: 0.90 !important;
+  cursor: pointer;
+  padding-left: .5em;
+}
+
+.projectselectbutton{
+  opacity: 0.95;
+  color: @text-light;
+  background: repeating-linear-gradient(
+    -55deg,
+    @dark-bg-color,
+    @dark-bg-color 10px,
+    #333 10px,
+    #333 20px
+  );
+  padding-left: 1em;
+  padding-bottom: 0.15em;
+  transform: skew(60deg, -30deg) scaleY(0.667);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  max-width: 10em;
+}.projectselectbutton:hover{
+  background: repeating-linear-gradient(
+    -55deg,
+    @dark-bg-color,
+    @dark-bg-color 10px,
+    @dark-bg-color 10px,
+    @dark-bg-color 20px
+  );
+  opacity: 1 !important;
+  left: 0px !important;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.menu_head{
+  font-stretch: semi-expanded !important;
+  font-family: @font-sans_serif;
+  color: @text-dark;
+  font-size: 30px;
+  opacity: 0.85;
+}
+
+.menu_head_button{
+  font-stretch: semi-expanded !important;
+  font-family: @font-sans_serif;
+  color: @text-dark;
+  font-size: 30px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.menu_button{
+  padding-top: 0.5em;
+  color: @text-dark;
+  text-align: left;
+}.menu_button:hover{
+  padding-left: 1em; 
+  color: @text-hardshadow-nav !important;
+}
+
+.menu_choice{
+  -webkit-animation: ThreeDmenu_transition 3000ms linear both;
+  animation: ThreeDmenu_transition 3000ms linear both;
+}
+
+.menu-left{
+  padding-top: 3em;
+  padding-left: 3em;
+}
+
+.choice_heading{
+  opacity: 0.75 ;
+  color: @text-dark;
+  padding-left: 3.10em;
+  font-size: 150%;
+  text-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 12px 18px rgba(0,0,0,0.16);
+}
+
+.img_instrutions{
+  font-size: 75%;
+  opacity: 0.75;
+  color: @text-light;
+  padding-bottom: .25em;
+}
+
+.img_main{
+  width: 200px !important;
+  font-family: @font-sans_serif;
+  filter: grayscale(50%);
+}
+
+.img_sub{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em; 
+  padding-left: .50em;
+  filter: grayscale(100%);
+}.img_sub:hover{
+  filter: grayscale(0%);
+}
+
+.img-modal{
+  background-size: '480px 270px';
+  background-repeat: 'no-repeat';
+  background-position: 'center';
+  max-width:  640 !important;
+  max-height: 360 !important;
+}
+
+.project_button{
+  color: red;
+}.project_button:hover{
+  cursor: pointer;
+}
+
+.projectdescstyle{
+  padding-left: 1em;
+  padding-right: 0.6em;
+}
+
+.project_description{
+  font-family: @font-sans_serif;
+  font-size: 115%;
+}
+
+.sectionchoicebutton{
+  opacity: 0.95;
+  cursor: pointer;
+  margin-left: 1.5em;
+  margin-right: 1em;
+  color: @light-bg-color;
+  font-family: @font-sans_serif;
+  font-size: 1.5em;
+  text-align: right;
+  height: 3em;
+  border-style: none;
+  border-color: @light-bg-color;
+  background-color: @dark-bg-color;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}.portfoliobutton:active{
+  background-color: @light-bg-color;
+  color: @text-dark;
+}.sectionchoicebutton:hover{
+  box-shadow: 1px 1px rgba(245, 245, 245, 1), 
+               2px 2px rgba(188, 37, 42, .6), 
+               3px 3px rgba(245, 245, 245, 1), 
+               4px 4px rgba(188, 37, 42, .55), 
+               5px 5px rgba(245, 245, 245, 1), 
+               6px 6px rgba(188, 37, 42, .5), 
+               7px 7px rgba(245, 245, 245, 1), 
+               8px 8px rgba(188, 37, 42, .45);
+}
+
+.portfoliobutton{
+  opacity: 0.95;
+  min-width: 20em;
+  text-align: right;
+  margin-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 0.5em;
+  font-family: @font-sans_serif;
+  font-size: 125%;
+  color: @text-light;
+  background-color: @dark-bg-color;
+  border-style: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}.portfoliobutton:active{
+  color: @text-dark;
+  opacity: .75;
+  background-color: @light-bg-color;
+  box-shadow:  none !important;
+}.portfoliobutton:hover{
+  box-shadow: 1px 1px rgba(245, 245, 245, 1), 
+               2px 2px rgba(188, 37, 42, .6), 
+               3px 3px rgba(245, 245, 245, 1), 
+               4px 4px rgba(188, 37, 42, .55), 
+               5px 5px rgba(245, 245, 245, 1), 
+               6px 6px rgba(188, 37, 42, .5), 
+               7px 7px rgba(245, 245, 245, 1), 
+               8px 8px rgba(188, 37, 42, .45);
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfoliobutton{
+    min-width: 15em !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .portfoliobutton{
+    min-width: 10em !important;
+  }
+}
+
+.skilltableformat{
+  border-left: 1px #302C27;
+  padding-left: 2em;
+  padding-right: 2em;
+  opacity: 0.75 !important;
+}
+
+.skilltablehead{
+  font-family: @font_table_title;
+  font-size: 125%;
+  text-decoration: underline;
+  padding-bottom: 1em;
+  color: @text-hardshadow-dark;
+}
+
+.skillsetcontainer{
+  padding: 2.5em;
+  background: #f5f5f5 !important;
+  background-image: none;
+  opacity: 1.00 !important;
+}
+
+.skilltablelanguage{
+  color: @text-dark;
+  font-family: @font-sans_serif;
+  font-size: 110%;
+  padding-left: 1em;
+}
+
+.skilltabledesc{
+  color: @text-dark;
+  font-family: @font-sans_serif;
+  font-size: 105%;
+  padding-left: 1em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .skilltabledesc{
+    font-size: 90%;
+    padding-left: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .skilltabledesc{
+    font-size: 85%;
+    padding-left: 0.25em;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .skilltabledesc{
+    font-size: 85%;
+    // border-bottom: 1px solid @dark-bg-color;
+    padding-bottom: 0.50em;
+  }
+}
+
+.skillsetbutton{
+  opacity: 0.95;
+  width: 10em;
+  height: 5em;
+  font-family: @font-sans_serif;
+  font-size: 125%;
+  color: @text-light;
+  background-color: @dark-bg-color;
+  border-style: none;
+  margin: .5em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}.skillsetbutton:active{
+  color: @text-dark;
+  opacity: .75;
+  background-color: @light-bg-color;
+  box-shadow:  none !important;
+}.skillsetbutton:hover{
+  box-shadow: 1px 1px rgba(245, 245, 245, 1), 
+               2px 2px rgba(188, 37, 42, .6), 
+               3px 3px rgba(245, 245, 245, 1), 
+               4px 4px rgba(188, 37, 42, .55), 
+               5px 5px rgba(245, 245, 245, 1), 
+               6px 6px rgba(188, 37, 42, .5), 
+               7px 7px rgba(245, 245, 245, 1), 
+               8px 8px rgba(188, 37, 42, .45);
+}
+
+.skillsetbutton_small{
+  opacity: 0.95;
+  height: 2.5em;
+  font-family: @font-sans_serif;
+  font-size: 100%;
+  color: @text-light;
+  background-color: @dark-bg-color;
+  border-style: none;
+  margin: .5em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}.skillsetbutton_small:active{
+  color: @text-dark;
+  opacity: .75;
+  background-color: @light-bg-color;
+  box-shadow:  none !important;
+}.skillsetbutton_small:hover{
+  box-shadow: 1px 1px rgba(245, 245, 245, 1), 
+               2px 2px rgba(188, 37, 42, .6), 
+               3px 3px rgba(245, 245, 245, 1), 
+               4px 4px rgba(188, 37, 42, .55), 
+               5px 5px rgba(245, 245, 245, 1);
+}
+
+@media only screen and (max-width: 1100px) {
+  .skillsetbutton{
+    width: 7.5em;
+    font-size: 100%;
+  }
+}
