@@ -125,25 +125,6 @@ class Main extends React.Component {
     // back end project data
     const projects_Front = [
       {
-        name: "Mock Tesla Site",
-        type: "cms",
-        index: 0,
-        link: "https://18.189.182.245/",
-        github: "https://github.com/nseamans/Tesla_WordPress_Site",
-        tagline: "Commerical WordPress Example with a Custom theme.",
-        description:
-          "Mock Up site utilizing a custom theme made in WordPress, JQuery, BootStrap, Chart.js, and PHP. The site contains custom made " +
-          "theme utilizing bootstrap and JQuery for responsive web behaviour. Contains elements such as an image gallery, a chart illustrating " +
-          "tesla sales compared to other vehicles, and other interactive elements made utilizing various javascript libraries.  ",
-        tagline: "Commerical WordPress Example with a Custom theme.",
-        images: [
-          "/media/teslasite/Image1.png",
-          "/media/teslasite/Image2.png",
-          "/media/teslasite/Image3.png",
-          "/media/teslasite/Image4.png",
-        ],
-      },
-      {
         name: "Charger Roofing Site",
         type: "cms",
         index: 1,
