@@ -126,8 +126,8 @@ class Main extends React.Component {
     const projects_Front = [
       {
         name: "Charger Roofing Site",
-        type: "cms",
-        index: 1,
+        type: "Word-Press",
+        index: 0,
         link: "https://www.charger-roofing.com",
         github: false,
         tagline: "Minimal Custom WordPress blog with custom theme",
@@ -143,8 +143,8 @@ class Main extends React.Component {
       },
       {
         name: "Studio Ghibli API Access",
-        type: "cms",
-        index: 2,
+        type: "One Page Site",
+        index: 1,
         link: "https://nseamans.github.io/ghibliApp/?",
         github: "https://github.com/nseamans/Tesla_WordPress_Site",
         tagline: "Commerical WordPress Example with a Custom theme.",
