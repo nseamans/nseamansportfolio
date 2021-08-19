@@ -14,7 +14,7 @@ function Languagemenu() {
           JavaScript <br />
           <sup>4 Year Experience</sup>
         </div>
-        <div class='col'>React.js, Node.js, Vue.js, Jest.js</div>
+        <div class='col'>React.js, Node.js, Vue.js</div>
         <div class='col'>
           Full-Stack Web Apps, Front End SPA's, API's, Software Testing,
           ASynchronous Apps
