@@ -18,12 +18,12 @@ class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      todisplay: "Full",
-      projectchoice: false,
+      todisplay: "JavaScript",
+      projectchoice: true,
       menudisplay: "Skillset",
       projectchosen: 0,
       imagechosen: 0,
-      projectdropbutton: <i class='fas fa-caret-square-down'></i>,
+      projectdropbutton: <i class='fas fa-caret-square-up'></i>,
     };
   }
 
@@ -76,61 +76,90 @@ class Main extends React.Component {
     // front end project data
     const projects_Full = [
       {
-        name: "Event: Scheduling App",
-        type: "full",
+        name: "Color Scheme App",
+        type: "JavaScript",
         index: 0,
+        link: "https://palettescolor-frontend.herokuapp.com",
+        github: "https://github.com/nseamans/pallete",
+        technologies: [`Node`, `Express`, `React`, 'MongoDB', 'JWT', 'Bootstrap 5'],
+        description:
+          "Application developed to allow users to create and search color schemes. Utilizes React with the useContext hook for state management" +
+          "on the front-end. The back-end utilizes Node.js, Express, and JWT tokens for authentication. Responsive design is handled with a combination" +
+          " of custom CSS and BootStrap 5.",
+        tagline: "Single page React applicion utizling a Node.js API to retrieve data.",
+        images: [
+          "/media/palette/palette1.png",
+          "/media/palette/palette2.png",
+          "/media/palette/palette3.png",
+          "/media/palette/palette4.png"
+        ],
+      },
+      {
+        name: "Event Scheduling App",
+        type: "JavaScript",
+        index: 1,
         link: "https://group-manage-app.herokuapp.com/users/login?",
         github: "https://github.com/nseamans/Event_Application_Code",
+        technologies: [`Node`, `Express`, `EJS`, 'MongoDB', 'Passport.js', 'Bootstrap 4'],
         description:
-          "Node.js and JavaScript Application that allows users to group events and tasks associated to that group." +
-          " Utilizes Passport.js for User Authentication and Chart.js to provide visual representation of events" +
-          " scheduled. ",
-        tagline: "Commerical WordPress Example with a Custom theme.",
+          "Utilizes EJS templating to render views of events and options to customize events for varous groups." +
+          "Also utilizes Passport.js for User Authentication, Chart.js to provide visual representation of events, and MongoDB for information storage",
+        tagline: "Server side rendered node.js application",
         images: [
           "/media/eventapp/event1.png",
           "/media/eventapp/event2.png",
           "/media/eventapp/event3.png",
           "/media/eventapp/event4.png",
         ],
-      },
+      }      
+    ];
+    // back end project data
+    const php_projects = [
       {
         name: "Park Activity App",
-        type: "full",
-        index: 1,
+        type: "php",
+        index: 0,
         link: "https://phpsandbox.io/e/x/yjlxr?layout=Preview&iframeId=ghsdy0uf1h&theme=dark&defaultPath=%2F&showExplorer=no",
         github: "https://github.com/nseamans/NationalPark_ActivityApp_PHP",
+        technologies: [`PHP`, `Vue`, `BootStrap`, 'nps.gov api'],
         description:
           "PHP and Vue application that utilizes the national park API to search for activites in certain parks by state. Note: PHPsandbox link for project works best when the site view is expanded to the full view portal. This is done by clicking 'open in new window' in the preview section located at the top right of the screen.",
-        tagline: "Commerical WordPress Example with a Custom theme. Beta version of a MERN (Mongo, Express, React, Node) stack applicaiton I am currently developing. This appilcation works as a proof of concept for a large scale applicaion to allow the public and students to retrieve informaiton pertaining to famous modern artists. ",
+        tagline: "Server Side PHP site utilzing Vue and Bootstrap 5",
         images: [
           "/media/parkapp/park1.png",
           "/media/parkapp/park2.png",
-          "/media/parkapp/park3.png"
+          "/media/parkapp/park3.png",
+          "/media/parkapp/park4.png"
         ],
       },
       {
-        name: "Pop Art App Beta",
-        type: "full",
-        index: 2,
-        link: "https://group-manage-app.herokuapp.com/users/login?",
-        github: "https://github.com/nseamans/Pop-Art-Application",
+        name: "Mock Tesla Site",
+        type: "WordPress",
+        index: 1,
+        link: false,
+        github: "https://github.com/nseamans/Tesla_WordPress_Site",
+        technologies: [`WordPress`, `Bootstrap`, `Chart.js`],
+        tagline: "Wordpress site manipulating PHP for a custom theme",
         description:
-          "Modern/Pop art wiki style site allowing users to view media and informaiton pertaining to different artists. NOTES: I have recently changed the back-end api I am developing so images are not displayed any more. Also, This application uses a seperate container for the back-end. Due to the nature of Heroku free app servers, the front-end portion of the app may produce errors pertaining to not being able to retrieve information from the seperate node.js server. Give the applicaiton around twenty seconds to fully activate.",
-        tagline: "Commerical WordPress Example with a Custom theme. Beta version of a MERN (Mongo, Express, React, Node) stack applicaiton I am currently developing. This appilcation works as a proof of concept for a large scale applicaion to allow the public and students to retrieve informaiton pertaining to famous modern artists. ",
+          "Mock Up site utilizing a custom theme made in WordPress, JQuery, BootStrap, Chart.js, and PHP. The site contains custom made " +
+          "theme utilizing bootstrap and JQuery for responsive web behaviour. Contains elements such as an image gallery, a chart illustrating " +
+          "tesla sales compared to other vehicles, and other interactive elements made utilizing various javascript libraries.  ",
+        tagline: "Commerical WordPress Example with a Custom theme.",
         images: [
-          "/media/other/popartApp.png"
+          "/media/teslasite/Image1.png",
+          "/media/teslasite/Image2.png",
+          "/media/teslasite/Image3.png",
+          "/media/teslasite/Image4.png",
         ],
-      }
-    ];
-    // back end project data
-    const projects_Front = [
+      },
       {
         name: "Charger Roofing Site",
-        type: "Word-Press",
-        index: 0,
+        type: "cms",
+        index: 2,
         link: "https://www.charger-roofing.com",
         github: false,
-        tagline: "Minimal Custom WordPress blog with custom theme",
+        technologies: [`WordPress`, `Elementor`],
+        tagline: "Commercial wordpress site utilizing Elementor",
         description:
           "The website was created under contract with Firecat Studio (San Antonio-based Web Agency) for San Antonio roofing company Charger Roofing. Utilized Elementor to create the theme and SiteGround to host. The site also utilizes several different form plugins such as Yoast and Wpforms. Utilized javascript and CSS for financing options presented. ",
         tagline: "Commerical WordPress Example with a Custom theme.",
@@ -141,10 +170,13 @@ class Main extends React.Component {
           "/media/chargerroofing/chargerroofing4.png",
         ],
       },
+    ];
+
+    const other_projects = [
       {
         name: "Studio Ghibli API Access",
-        type: "One Page Site",
-        index: 1,
+        type: "cms",
+        index: 2,
         link: "https://nseamans.github.io/ghibliApp/?",
         github: "https://github.com/nseamans/Tesla_WordPress_Site",
         tagline: "Commerical WordPress Example with a Custom theme.",
@@ -167,38 +199,40 @@ class Main extends React.Component {
 
     let projectsdisplayed;
     let projectsicon;
-    if (this.state.todisplay === "Front") {
-      projectsdisplayed = projects_Front;
-    } else if (this.state.todisplay === "Full") {
+    if (this.state.todisplay === "Php") {
+      projectsdisplayed = php_projects;
+    } else if (this.state.todisplay === "JavaScript") {
       projectsdisplayed = projects_Full;
     } else if (this.state.todisplay === "Code") {
       projectsdisplayed = projects_Code;
     }
-
+    
     let typemenu = (
       <div>
         <div class='menu-text'>
           <Buttonlarge
-            functionToHandle={() => this.handleDisplayType("Full")}
-            displayText={"Full-Stack"}
+            functionToHandle={() => this.handleDisplayType("JavaScript")}
+            displayText={"JavaScript"}
           />
           <Buttonlarge
-            functionToHandle={() => this.handleDisplayType("Front")}
-            displayText={"Front-End"}
+            functionToHandle={() => this.handleDisplayType("Php")}
+            displayText={"PHP"}
           />
         </div>
       </div>
     );
 
     let projectmenu = (
-      <div class='container'>
+      <div class='container' >
         <div class='submenu-text'>
           {projectsdisplayed.map((project) => (
             <div class='row'>
-              <Buttonlarge
+            <span onClick = {this.handleprojectchoice}>
+            <Buttonlarge
                 functionToHandle={() => this.handleProjectNumber(project.index)}
-                displayText={project.name}
+                displayText={project.name}     
               />
+            </span>
             </div>
           ))}
         </div>
@@ -206,22 +240,21 @@ class Main extends React.Component {
     );
 
     let choicemenuclosed = (
-      <div class='row projectdescstyle'>
+      <div class='row projectdescstyle' >
         <div class='col-10'>
-          <h4 class='menu_head'> Navigate Project </h4>
+          <h4 class='menu_head'>Navigate Projects </h4>
         </div>
         <div class='col-2'>
-          <h4 class='menu_head_button'>
-            <span onClick={() => this.handleprojectchoice()}>
-              {this.state.projectdropbutton}
-            </span>
+          <h4 class='menu_head_button' 
+            onClick={() => this.handleprojectchoice()}>
+            {this.state.projectdropbutton}
           </h4>
         </div>
       </div>
     );
 
     let choicemenuopen = (
-      <div class='row projectdescstyle'>
+      <div class='row projectdescstyle pb-5'>
         <div class='col-5'>
           <h4 class='menu_head'> Project Types </h4>
           {typemenu}
@@ -231,10 +264,9 @@ class Main extends React.Component {
           {projectmenu}
         </div>
         <div class='col-2'>
-          <h4 class='menu_head_button'>
-            <span onClick={() => this.handleprojectchoice()}>
-              {this.state.projectdropbutton}
-            </span>
+          <h4 class='menu_head_button' 
+            onClick={() => this.handleprojectchoice()}>
+            {this.state.projectdropbutton}
           </h4>
         </div>
       </div>
@@ -244,6 +276,94 @@ class Main extends React.Component {
     if (this.state.projectchoice === false) {
       projecttypedisplay = choicemenuclosed;
     } else projecttypedisplay = choicemenuopen;
+
+    let languagedescription;
+    if(this.state.todisplay === 'JavaScript'){
+      languagedescription = (
+        <div class="container">
+         <hr />
+        <div class="row mb-2">
+          <div class="col">
+            Links:
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col">
+            <a href="https://reactjs.org" 
+              target="_blank" class="me-2 mb-1 mt-1">
+              <i class="devicon-react-original"></i> React
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://nodejs.org/en/" 
+              target="_blank" class="me-2 mb-1 mt-1">
+              <i class="fab fa-node-js"></i> Node.js
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.mongodb.com" 
+              target="_blank" class="me-2 mb-1 mt-1">
+              <i class="devicon-mongodb-plain"></i> MongoDB
+            </a>
+          </div>
+          <div class="col-6"></div>
+        </div>
+    
+         <p>
+          Javascript projects utilize javascript as the primary language for both the front and back end systems. 
+          This includes front-end libraries such as React and back-end libraries such as Express.js. 
+          Non-relational databases such as Mongodb are utilized the most.
+         </p>
+        </div>
+      );
+    } else if(this.state.todisplay === 'Php'){
+      languagedescription = (
+        <div class='container'>
+          <hr />
+          <div class="row mb-2">
+            <div class="col">
+              Links:
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col">
+              <a href="https://wordpress.com" 
+                target="_blank" class="me-2 mb-1 mt-1">
+                <i class="devicon-wordpress-plain"></i> WordPress
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://www.postgresql.org" 
+                target="_blank" class="me-2 mb-1 mt-1">
+                <i class="devicon-mysql-plain"></i> | <i class="devicon-postgresql-plain"></i> SQL
+              </a>
+            </div>
+            <div class="col-6"></div>
+          </div>
+          <p>
+            PHP projects are both back-end and content management system platforms such as wordpress. Projects 
+            here are rendered by the server. Partly due to the inclusion of wordpress, relational (Primarily SQL) 
+            databases are utilized.
+          </p>
+        </div>
+      );
+    }
+
+    let projectinfo;
+    if(projecttypedisplay === choicemenuclosed){
+      projectinfo = <Projectstodisplay
+                    name={projectsdisplayed[this.state.projectchosen].name}
+                    link={projectsdisplayed[this.state.projectchosen].link}
+                    github={projectsdisplayed[this.state.projectchosen].github}
+                    tagline={projectsdisplayed[this.state.projectchosen].tagline}
+                    description={
+                      projectsdisplayed[this.state.projectchosen].description
+                    }
+                    images={projectsdisplayed[this.state.projectchosen].images}
+                  />; 
+    } else {
+      projectinfo = languagedescription;
+    }
 
     // In: skillsetmenu/skillset.js
     let skillset = (
@@ -259,15 +379,7 @@ class Main extends React.Component {
         <div>{projecttypedisplay}</div>
         <div>
           <div class='menu_choice'>
-            <Projectstodisplay
-              name={projectsdisplayed[this.state.projectchosen].name}
-              link={projectsdisplayed[this.state.projectchosen].link}
-              github={projectsdisplayed[this.state.projectchosen].github}
-              description={
-                projectsdisplayed[this.state.projectchosen].description
-              }
-              images={projectsdisplayed[this.state.projectchosen].images}
-            /> 
+            {projectinfo}
           </div>
         </div>
       </div>
@@ -305,8 +417,8 @@ class Main extends React.Component {
           <div class="headerintro__div">
             <h1 class="headerintro__text">
               My name is Nicholas Seamans. <br />
-              I am a Full-Stack Developer.
-                </h1>
+              I am a Full-Stack Web Developer.
+            </h1>
           </div>
         </div>
         {about}

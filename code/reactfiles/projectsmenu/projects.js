@@ -19,6 +19,22 @@ class Projectstodisplay extends React.Component {
   }
 
   componentDidMount() {
+    // View an image.
+    const viewer = new Viewer(document.getElementById('image'), {
+      inline: true,
+      viewed() {
+        viewer.zoomTo(1);
+      },
+    });
+    // Then, show the image by clicking it, or call `viewer.show()`.
+
+    // View a list of images.
+    // Note: All images within the container will be found by calling `element.querySelectorAll('img')`.
+    const gallery = new Viewer(document.getElementById('images'));
+    // Then, show one image by click it, or call `gallery.show()`.
+
+
+
     this.setState({
       datastuff: "left"
     });
@@ -85,12 +101,7 @@ class Projectstodisplay extends React.Component {
         </div>;
       } else {
         subImage1page = <h5 class='img_instrutions'><sub>No image present</sub></h5>;
-        subImage1 = <div class='row'>
-                      <img
-                        src = '/media/placeholders/noimagepresent.jpg'
-                        class='img_sub'
-                      />
-                    </div>;
+        subImage1 = null;
       }
 
       let subImage2;
@@ -107,12 +118,7 @@ class Projectstodisplay extends React.Component {
         </div>;
       } else {
         subImage2page = <h5 class='img_instrutions'><sub>No image present</sub></h5>;
-        subImage2 = <div class='row'>
-                      <img
-                        src = '/media/placeholders/noimagepresent.jpg'
-                        class='img_sub'
-                      />
-                    </div>;
+        subImage2 = null;
       }
 
       let subImage3;
@@ -129,12 +135,7 @@ class Projectstodisplay extends React.Component {
         </div>;
       } else {
         subImage3page = <h5 class='img_instrutions'><sub>No image present</sub></h5>;
-        subImage3 = <div class='row'>
-                      <img
-                        src = '/media/placeholders/noimagepresent.jpg'
-                        class='img_sub'
-                      />
-                    </div>;
+        subImage3 = null;
       }
 
       let subImage4;
@@ -151,42 +152,42 @@ class Projectstodisplay extends React.Component {
         </div>;
       } else {
         subImage4page = <h5 class='img_instrutions'><sub>No image present</sub></h5>;
-        subImage4 = <div class='row'>
-                      <img
-                        src = '/media/placeholders/noimagepresent.jpg'
-                        class='img_sub'
-                      />
-                    </div>;
+        subImage4 = null;
       }
     // End Sub images
 
     let imagemenu = (
       <div style={imageviewcontainer}>
+        <div hidden>
+          <img id="image" src="picture.jpg" alt="Picture" />
+        </div>        
         <div class="container">
           <div class='row'>
-            <h6 class='img_instrutions'>Click Small Image to Change</h6>
+            <h6 class='img_instrutions'>Click to View a Gallery</h6>
           </div>
-          <div class="row">
-            <div class="col">
-              {subImage1page}
-              {subImage1}
+          <div id="images">
+            <div class="row" >
+              <div class="col">
+                {subImage1page}
+                {subImage1}
+              </div>
+              <div class="col">
+                {subImage2page}
+                {subImage2}
+              </div>
             </div>
-            <div class="col">
-              {subImage2page}
-              {subImage2}
-            </div>
-            <div class="col">
-              {subImage3page}
-              {subImage3}
-            </div>
-            <div class="col">
-              {subImage4page}
-              {subImage4}
+            <div class="row" >
+              <div class="col">
+                {subImage3page}
+                {subImage3}
+              </div>
+              <div class="col">
+                {subImage4page}
+                {subImage4}
+              </div>
             </div>
           </div>
-          <div class="row">
-            {mainImage}
-          </div>
+            
         </div>
       </div>
     );
@@ -223,12 +224,20 @@ class Projectstodisplay extends React.Component {
         <div class='col'>
           <a href={this.props.github} target='_blank' rel='noopener noreferrer'>
             <h5>
-              GitHub: <i class='fab fa-github'></i>
+              Git-Link: <i class='fab fa-github'></i>
             </h5>
           </a>
         </div>
       );
     }
+
+    let projecttagline = (
+      <div>
+        <div class='row mb-2'>
+          <p>{this.props.tagline}</p>
+        </div>
+      </div>
+    );
 
     let projectdesc = (
       <div>
@@ -238,7 +247,6 @@ class Projectstodisplay extends React.Component {
         </div>
         <br />
         <div class='row'>
-          {this.props.tagline}
           <p>{this.props.description}</p>
         </div>
       </div>
@@ -251,8 +259,9 @@ class Projectstodisplay extends React.Component {
           <div class='row'>
             <div class='col'>
               <div class='row projectdescstyle'>
+                {projecttagline}
                 {projectdesc}
-                <div class='container center-block'>{imagemenu}</div>
+                <div class='center-block'>{imagemenu}</div>
               </div>
             </div>
           </div>

@@ -6,8 +6,8 @@ function Languagemenu() {
     <div class="container">
       <div class='row'>
         <div class='col skilltablehead'>Name</div>
-        <div class='col skilltablehead'>Libraries</div>
-        <div class='col skilltablehead'>Description</div>
+        <div class='col skilltablehead'>Utilized</div>
+        <div class='col skilltablehead'>Work</div>
       </div>
       <div class='row'>
         <div class='col skilltablelanguage'>
@@ -56,7 +56,7 @@ function Cmssoftwaremenu() {
     <div class="container">
       <div class='row'>
         <div class='col skilltablehead'>Name</div>
-        <div class='col skilltablehead'>Tools</div>
+        <div class='col skilltablehead'>Utilized</div>
         <div class='col skilltablehead'>Work</div>
       </div>
       <div class='row'>
@@ -73,7 +73,7 @@ function Cmssoftwaremenu() {
       <div class='row'>
         <div class='col skilltablelanguage'>
           Adobe Creative Suite <br />
-          <sup>2 Years Experience</sup>
+          <sup>1 Year Experience</sup>
         </div>
         <div class='col'>Photoshop, XD</div>
         <div class='col'>

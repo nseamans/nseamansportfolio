@@ -44,6 +44,10 @@
 @font_title:        'Yeseva One', cursive;
 @font_table_title:  'Josefin Sans', sans-serif;
 
+h1, h2, h3, h4, h5, h6, p{
+  font-family: @font-sans_serif;
+}
+
 /* Button Style */
 @button-bg-color:   #2F2830; 
 @button-transition:   all 0.5s cubic-bezier(.25,.8,.25,1);
@@ -115,7 +119,7 @@ body {
   bottom: 0px;
   left: 0px;
   animation: bg-animation 3000ms linear both;
-  height: 110em; 
+  height: 100em; 
 }
 
 .content_container{
@@ -320,8 +324,11 @@ a:link {
   margin-right: auto;
   padding-bottom: 2em; 
   padding-left: .50em;
+  height: 15em;
+  object-fit: cover;
   filter: grayscale(100%);
 }.img_sub:hover{
+  cursor: pointer;
   filter: grayscale(0%);
 }
 
