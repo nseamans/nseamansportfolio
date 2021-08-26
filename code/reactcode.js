@@ -401,9 +401,9 @@ class Main extends React.Component {
     let about = (
       <div class="container">
         <p class="" style={infoSummary}>
-          I have experience with both back-end and front-end web development. This includes creating single page applications,
-          Web API'S, Word-Press Sites, Java Applications, and both sturctured and non-structured databases. I also have experience 
-          utilizing various productivity and content editing software suites.
+          I have experience with both back-end and front-end web development. This includes creating single-page applications, Web API'S, 
+          Word-Press Sites, Java Applications, and both structured and non-structured databases. 
+          I also have experience utilizing various productivity and content editing software suites including Adobe Creative Suite.
         </p>
         <p style={infoSummary}>
           <sub>(Click below to view my skill-sets and Projects)</sub>
