@@ -19,11 +19,11 @@ class Main extends React.Component {
     super();
     this.state = {
       todisplay: "JavaScript",
-      projectchoice: true,
+      projectchoice: false,
       menudisplay: "Skillset",
       projectchosen: 0,
       imagechosen: 0,
-      projectdropbutton: <i class='fas fa-caret-square-up'></i>,
+      projectdropbutton: <i class='fas fa-caret-square-down'></i>,
     };
   }
 
@@ -161,7 +161,7 @@ class Main extends React.Component {
         technologies: [`WordPress`, `Elementor`],
         tagline: "Commercial wordpress site utilizing Elementor",
         description:
-          "The website was created under contract with Firecat Studio (San Antonio-based Web Agency) for San Antonio roofing company Charger Roofing. Utilized Elementor to create the theme and SiteGround to host. The site also utilizes several different form plugins such as Yoast and Wpforms. Utilized javascript and CSS for financing options presented. ",
+          "Website created under contract with Firecat Studio (San Antonio-based Web Agency) for San Antonio roofing company Charger Roofing. Utilized Elementor to create the theme and SiteGround to host. The site also utilizes several different form plugins such as Yoast and Wpforms. Utilized javascript and CSS for financing options presented. ",
         tagline: "Commerical WordPress Example with a Custom theme.",
         images: [
           "/media/chargerroofing/chargerroofing1.png",
@@ -308,11 +308,9 @@ class Main extends React.Component {
           </div>
           <div class="col-6"></div>
         </div>
-    
          <p>
           Javascript projects utilize javascript as the primary language for both the front and back end systems. 
-          This includes front-end libraries such as React and back-end libraries such as Express.js. 
-          Non-relational databases such as Mongodb are utilized the most.
+          This includes front-end libraries such as React and back-end libraries such as Express.js.
          </p>
         </div>
       );
@@ -342,8 +340,7 @@ class Main extends React.Component {
           </div>
           <p>
             PHP projects are both back-end and content management system platforms such as wordpress. Projects 
-            here are rendered by the server. Partly due to the inclusion of wordpress, relational (Primarily SQL) 
-            databases are utilized.
+            here are rendered by the server. 
           </p>
         </div>
       );
@@ -401,9 +398,9 @@ class Main extends React.Component {
     let about = (
       <div class="container">
         <p class="" style={infoSummary}>
-          I have experience with both back-end and front-end web development. This includes creating single-page applications, Web API'S, 
-          Word-Press Sites, Java Applications, and both structured and non-structured databases. 
-          I also have experience utilizing various productivity and content editing software suites including Adobe Creative Suite.
+          I have experience with both back-end and front-end web development. This includes creating single page applications,
+          Web API'S, Word-Press Sites, Java Applications, and both sturctured and non-structured databases. I also have experience 
+          utilizing various productivity and content editing software suites.
         </p>
         <p style={infoSummary}>
           <sub>(Click below to view my skill-sets and Projects)</sub>
