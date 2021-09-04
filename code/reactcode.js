@@ -284,11 +284,6 @@ class Main extends React.Component {
          <hr />
         <div class="row mb-2">
           <div class="col">
-            Links:
-          </div>
-        </div>
-        <div class="row mb-2">
-          <div class="col">
             <a href="https://reactjs.org" 
               target="_blank" class="me-2 mb-1 mt-1">
               <i class="devicon-react-original"></i> React
@@ -318,11 +313,6 @@ class Main extends React.Component {
       languagedescription = (
         <div class='container'>
           <hr />
-          <div class="row mb-2">
-            <div class="col">
-              Links:
-            </div>
-          </div>
           <div class="row mb-2">
             <div class="col">
               <a href="https://wordpress.com" 
