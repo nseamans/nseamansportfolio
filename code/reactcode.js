@@ -164,10 +164,10 @@ class Main extends React.Component {
           "Website created under contract with Firecat Studio (San Antonio-based Web Agency) for San Antonio roofing company Charger Roofing. Utilized Elementor to create the theme and SiteGround to host. The site also utilizes several different form plugins such as Yoast and Wpforms. Utilized javascript and CSS for financing options presented. ",
         tagline: "Commerical WordPress Example with a Custom theme.",
         images: [
-          "/media/chargerroofing/chargerroofing1.png",
-          "/media/chargerroofing/chargerroofing2.png",
-          "/media/chargerroofing/chargerroofing3.png",
-          "/media/chargerroofing/chargerroofing4.png",
+          "https://i.imgur.com/TcBVPrf.png",
+          "https://i.imgur.com/EkBe0Ad.png",
+          "https://i.imgur.com/xRIapnk.png",
+          "https://i.imgur.com/fv0s0af.png",
         ],
       },
     ];
