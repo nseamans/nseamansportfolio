@@ -88,10 +88,10 @@ class Main extends React.Component {
           " of custom CSS and BootStrap 5.",
         tagline: "Single page React applicion utizling a Node.js API to retrieve data.",
         images: [
-          "/media/palette/palette1.png",
-          "/media/palette/palette2.png",
-          "/media/palette/palette3.png",
-          "/media/palette/palette4.png"
+          "https://i.imgur.com/KP05jNL.png",
+          "https://i.imgur.com/N6BwY0s.png",
+          "https://i.imgur.com/HJTB07I.png",
+          "https://i.imgur.com/o3jZKJX.png"
         ],
       },
       {
@@ -106,10 +106,10 @@ class Main extends React.Component {
           "Also utilizes Passport.js for User Authentication, Chart.js to provide visual representation of events, and MongoDB for information storage",
         tagline: "Server side rendered node.js application",
         images: [
-          "/media/eventapp/event1.png",
-          "/media/eventapp/event2.png",
-          "/media/eventapp/event3.png",
-          "/media/eventapp/event4.png",
+          "https://i.imgur.com/GqgJtI6.png",
+          "https://i.imgur.com/v9qnGIv.png",
+          "https://i.imgur.com/6odVtIC.png",
+          "https://i.imgur.com/Mrt2lu3.png",
         ],
       }      
     ];
@@ -126,10 +126,10 @@ class Main extends React.Component {
           "PHP and Vue application that utilizes the national park API to search for activites in certain parks by state. Note: PHPsandbox link for project works best when the site view is expanded to the full view portal. This is done by clicking 'open in new window' in the preview section located at the top right of the screen.",
         tagline: "Server Side PHP site utilzing Vue and Bootstrap 5",
         images: [
-          "/media/parkapp/park1.png",
-          "/media/parkapp/park2.png",
-          "/media/parkapp/park3.png",
-          "/media/parkapp/park4.png"
+          "https://i.imgur.com/ANkvodz.png",
+          "https://i.imgur.com/tbJ6vNE.png",
+          "https://i.imgur.com/HM8pzba.png",
+          "https://i.imgur.com/94dOCZk.png"
         ],
       },
       {
@@ -146,10 +146,10 @@ class Main extends React.Component {
           "tesla sales compared to other vehicles, and other interactive elements made utilizing various javascript libraries.  ",
         tagline: "Commerical WordPress Example with a Custom theme.",
         images: [
-          "/media/teslasite/Image1.png",
-          "/media/teslasite/Image2.png",
-          "/media/teslasite/Image3.png",
-          "/media/teslasite/Image4.png",
+          "https://i.imgur.com/Zd0EUQ4.png",
+          "https://i.imgur.com/TRdjGqT.png",
+          "https://i.imgur.com/f1rmbaP.png",
+          "https://i.imgur.com/dS76vfT.png",
         ],
       },
       {
