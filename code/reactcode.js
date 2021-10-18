@@ -83,6 +83,7 @@ class Main extends React.Component {
         github: "https://github.com/nseamans/pallete",
         technologies: [`Node`, `Express`, `React`, 'MongoDB', 'JWT', 'Bootstrap 5'],
         description:
+          "Note: Application utilizes Heoku free containers. Each container needs time to load. This translates to initial queries taking time to process. <br>" +
           "Application developed to allow users to create and search color schemes. Utilizes React with the useContext hook for state management" +
           "on the front-end. The back-end utilizes Node.js, Express, and JWT tokens for authentication. Responsive design is handled with a combination" +
           " of custom CSS and BootStrap 5.",
